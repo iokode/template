@@ -1,0 +1,48 @@
+@use "partials/colors";
+@use "partials/grid";
+@use "partials/header";
+@use "partials/aside";
+@use "partials/footer";
+@use "partials/hosting";
+
+@import "normalize.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+  background-color: #EEEEEE;
+  font-family: 'Open Sans', sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1C0540;
+    color: white;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: colors.$light-link-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: colors.$dark-link-color;
+  }
+}
+
+.title {
+  font-size: 1.5em;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.subtitle {
+  font-size: 2em;
+  font-family: 'Orbitron', sans-serif;
+}
