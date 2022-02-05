@@ -47,10 +47,10 @@ header {
           margin-right: -12px;
 
           @media (prefers-color-scheme: light) {
-            border-color: colors.$light-border-color;
+            border-color: colors.$light-border;
           }
           @media (prefers-color-scheme: dark) {
-            border-color: colors.$dark-border-color;
+            border-color: colors.$dark-border;
           }
         }
       }

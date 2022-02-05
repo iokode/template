@@ -26,14 +26,14 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: colors.$light-link-color;
+  color: colors.$light-link;
 
   &:hover {
     text-decoration: underline;
   }
 
   @media (prefers-color-scheme: dark) {
-    color: colors.$dark-link-color;
+    color: colors.$dark-link;
   }
 }
 
@@ -41,6 +41,11 @@ aside {
   .title {
     font-size: 1.5em;
     font-family: 'Orbitron', sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
   }
 }
 
