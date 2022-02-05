@@ -1,28 +1,6 @@
 @import "normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-.pagination ul {
-  float: right;
-  list-style-type: none;
-  padding: 0;
-}
-.pagination ul li {
-  display: inline;
-}
-.pagination ul li a {
-  padding: 4px 8px;
-}
-.pagination ul li a:hover {
-  text-decoration: none;
-  padding: 3px 7px;
-  border: 1px solid #bc27e0;
-}
-@media (prefers-color-scheme: dark) {
-  .pagination ul li a:hover {
-    border-color: #ce75e8;
-  }
-}
-
 body {
   margin: auto;
   display: grid;
@@ -81,7 +59,6 @@ header {
   background-repeat: no-repeat;
   background-position-x: center;
 }
-
 @media (min-width: 768px) {
   header {
     padding-top: 200px;
@@ -106,7 +83,6 @@ header .main-links {
   text-align: center;
   margin-top: -15px;
 }
-
 header .main-links li {
   list-style-type: none;
   display: inline;
@@ -114,7 +90,6 @@ header .main-links li {
   margin-right: 10px;
   margin-top: 15px;
 }
-
 header .main-links li a:hover, header .main-links li a:focus {
   text-decoration: none;
   border: 2px solid;
@@ -123,7 +98,6 @@ header .main-links li a:hover, header .main-links li a:focus {
   margin-left: -12px;
   margin-right: -12px;
 }
-
 @media (prefers-color-scheme: light) {
   header .main-links li a:hover, header .main-links li a:focus {
     border-color: #bc27e0;
@@ -134,6 +108,7 @@ header .main-links li a:hover, header .main-links li a:focus {
     border-color: #ce75e8;
   }
 }
+
 aside > div {
   margin-bottom: 60px;
 }
@@ -142,12 +117,10 @@ footer {
   margin-top: 25px;
   text-align: center;
 }
-
 footer ul {
   list-style-type: none;
   padding: 0;
 }
-
 footer ul li {
   display: inline;
   margin-right: 5px;
@@ -157,11 +130,9 @@ footer ul li {
 #hosting a {
   display: block;
 }
-
 #hosting .vadavo-logo {
   margin-top: 10px;
 }
-
 #hosting .vadavo-logo img {
   width: 250px;
 }
@@ -208,27 +179,4 @@ aside ul {
   font-family: "Orbitron", sans-serif;
 }
 
-.post {
-  margin-bottom: 60px;
-}
-.post .date {
-  margin-top: 5px;
-}
-.post .title a {
-  color: #000;
-}
-@media (prefers-color-scheme: dark) {
-  .post .title a {
-    color: #FFF;
-  }
-}
-.post .post-actions ul {
-  list-style-type: none;
-  padding: 0;
-}
-.post .post-actions ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=layout.css.map */
