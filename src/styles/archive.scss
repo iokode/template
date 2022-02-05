@@ -1,0 +1,20 @@
+@use "partials/colors";
+@import "layout";
+
+main {
+  .date {
+    font-size: .8em;
+    padding-left: 1.5em;
+    display: block;
+
+    color: colors.$light-muted;
+    @media (prefers-color-scheme: dark){
+      color: colors.$dark-muted;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
