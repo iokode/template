@@ -1,28 +1,6 @@
 @import "normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-.pagination ul {
-  float: right;
-  list-style-type: none;
-  padding: 0;
-}
-.pagination ul li {
-  display: inline;
-}
-.pagination ul li a {
-  padding: 4px 8px;
-}
-.pagination ul li a:hover {
-  text-decoration: none;
-  padding: 3px 7px;
-  border: 1px solid #bc27e0;
-}
-@media (prefers-color-scheme: dark) {
-  .pagination ul li a:hover {
-    border-color: #ce75e8;
-  }
-}
-
 body {
   margin: auto;
   display: grid;

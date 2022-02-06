@@ -1,5 +1,4 @@
 @use "partials/colors";
-@use "components/pagination";
 @import "layout.scss";
 
 .post {
@@ -76,8 +75,4 @@
       }
     }
   }
-}
-
-.pagination {
-  @extend %pagination;
 }
