@@ -195,17 +195,20 @@ aside ul {
   margin: 0 10px;
 }
 
-.comments .comment, .comments .comment .replies .reply {
+.comments, .comments .comment .replies, .comments .comment .replies .reply .replies {
+  display: grid;
+  grid-row-gap: 10px;
+}
+.comments .comment, .comments .comment .replies .reply, .comments .comment .replies .comment {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto 1fr;
   grid-column-gap: 15px;
   border: 1px solid #bc27e0;
-  margin-bottom: 10px;
   padding: 15px;
 }
 @media (prefers-color-scheme: dark) {
-  .comments .comment, .comments .comment .replies .reply {
+  .comments .comment, .comments .comment .replies .reply, .comments .comment .replies .comment {
     border-color: #ce75e8;
   }
 }
@@ -240,7 +243,7 @@ aside ul {
 }
 .comments .comment .replies, .comments .comment .replies .reply .replies {
   grid-column: 1/4;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .comments .comment .replies .reply {
   border: none;
