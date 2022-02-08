@@ -6,35 +6,36 @@ body {
   display: grid;
   grid-column-gap: 80px;
   grid-row-gap: 30px;
+  grid-template-columns: 1fr auto;
 }
 
 body {
   max-width: 90%;
-  grid-template-areas: "header" "main" "aside" "footer";
+  grid-template-areas: "header header" "main main" "aside aside" "footer footer";
 }
 
 @media (min-width: 768px) {
   body {
     max-width: 728px;
-    grid-template-areas: "header" "main" "aside" "footer";
+    grid-template-areas: "header header" "main main" "aside aside" "footer footer";
   }
 }
 @media (min-width: 992px) {
   body {
     max-width: 952px;
-    grid-template-areas: "header header header" "aside main main" "footer footer footer";
+    grid-template-areas: "header header" "main aside" "footer footer";
   }
 }
 @media (min-width: 1200px) {
   body {
     max-width: 1160px;
-    grid-template-areas: "header header header" "aside main main" "footer footer footer";
+    grid-template-areas: "header header" "main aside" "footer footer";
   }
 }
 @media (min-width: 1440px) {
   body {
     max-width: 1400px;
-    grid-template-areas: "header header header" "aside main main" "footer footer footer";
+    grid-template-areas: "header header" "main aside" "footer footer";
   }
 }
 aside {
@@ -219,6 +220,7 @@ aside ul {
   grid-column: 2;
 }
 .comments .comment .author-label, .comments .comment .replies .reply .author-label {
+  height: fit-content;
   grid-column: 3;
   grid-row: 1;
   border: 1px solid #bc27e0;
@@ -235,11 +237,17 @@ aside ul {
   grid-row: 2;
 }
 .comments .comment .avatar, .comments .comment .replies .reply .avatar {
-  grid-column: 1;
-  grid-row: 1/3;
+  display: none;
 }
-.comments .comment .avatar img, .comments .comment .replies .reply .avatar img {
-  width: 100px;
+@media (min-width: 1200px) {
+  .comments .comment .avatar, .comments .comment .replies .reply .avatar {
+    display: block;
+    grid-column: 1;
+    grid-row: 1/3;
+  }
+  .comments .comment .avatar img, .comments .comment .replies .reply .avatar img {
+    width: 100px;
+  }
 }
 .comments .comment .replies, .comments .comment .replies .reply .replies {
   grid-column: 1/4;

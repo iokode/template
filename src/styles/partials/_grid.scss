@@ -1,58 +1,61 @@
+@use "../variables/devices";
+
 body {
   margin: auto;
   display: grid;
   grid-column-gap: 80px;
   grid-row-gap: 30px;
+  grid-template-columns: 1fr auto;
 }
 
-// small devices (landscape phones)
+// Mobile-first
 body {
   max-width: 90%;
   grid-template-areas:
-            "header"
-            "main"
-            "aside"
-            "footer";
+            "header header"
+            "main main"
+            "aside aside"
+            "footer footer";
 }
 
-@media (min-width: 768px) { // Medium devices (tablets)
+@media (min-width: devices.$tablet) {
   body {
     max-width: 768px - 40;
     grid-template-areas:
-            "header"
-            "main"
-            "aside"
-            "footer";
+            "header header"
+            "main main"
+            "aside aside"
+            "footer footer";
   }
 }
 
-@media (min-width: 992px) { // Large devices (desktops)
+@media (min-width: devices.$desktop) {
   body {
     max-width: 992px - 40;
     grid-template-areas:
-            "header header header"
-            "aside main main"
-            "footer footer footer";
+            "header header"
+            "main aside"
+            "footer footer";
   }
 }
 
-@media (min-width: 1200px) { // Extra large devices (large desktops)
+@media (min-width: devices.$large-desktop) {
   body {
     max-width: 1200px - 40;
     grid-template-areas:
-            "header header header"
-            "aside main main"
-            "footer footer footer";
+            "header header"
+            "main aside"
+            "footer footer";
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: devices.$extra-large-desktop) {
   body {
     max-width: 1440px - 40;
     grid-template-areas:
-            "header header header"
-            "aside main main"
-            "footer footer footer";
+            "header header"
+            "main aside"
+            "footer footer";
   }
 }
 
