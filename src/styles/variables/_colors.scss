@@ -1,14 +1,14 @@
 $light-background: #EEE;
-$dark-background: #1C0540;
+$dark-background: #222;
 
 $light-text-color: #000;
 $dark-text-color: #FFF;
 
-$light-link: rgb(188, 39, 224);
+$light-link: rgb(129, 0, 172);
 $dark-link: rgb(206, 117, 232);
 
-$light-border: rgb(188, 39, 224);
-$dark-border: rgb(206, 117, 232);
+$light-border: $light-link;
+$dark-border: $dark-link;
 
-$light-muted: #909090;
-$dark-muted: #B0B0B0;
+$light-muted: #111;
+$dark-muted: #EEE;
