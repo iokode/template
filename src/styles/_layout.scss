@@ -18,38 +18,44 @@ body {
     background-color: colors.$dark-background;
     color: white;
   }
-}
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: colors.$light-link;
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    color: colors.$dark-link;
-  }
-}
-
-aside {
-  .title {
-    font-size: 1.5em;
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-}
+  a {
+    text-decoration: none;
+    color: colors.$light-link;
 
-.slogan {
-  font-size: 2em;
-  font-family: 'Orbitron', sans-serif;
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: colors.$dark-link;
+    }
+  }
+
+  header {
+    ul.main-links {
+      padding: 0;
+    }
+  }
+
+  aside {
+    .title {
+      font-size: 1.5em;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+
+  .slogan {
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+  }
 }
