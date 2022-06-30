@@ -1,4 +1,4 @@
-@use "../variables/colors";
+@import "../components/links";
 
 header {
   margin: auto;
@@ -24,6 +24,34 @@ header {
     background-image: url("../images/dark/iokode.svg");
   }
 
+  .social-links {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100vw;
+
+    @media (max-width: 595px) {
+      text-align: center;
+      position: inherit;
+      top: inherit;
+      right: inherit;
+    }
+
+    li {
+      list-style-type: none;
+      display: inline;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 15px;
+
+      a {
+        @extend %square-link;
+      }
+    }
+  }
+
   .main-links {
     text-align: center;
     margin-top: -15px;
@@ -37,22 +65,7 @@ header {
       margin-top: 15px;
 
       a {
-        &:hover, &:focus {
-          text-decoration: none;
-          border: 2px solid;
-
-          padding-left: 10px;
-          padding-right: 10px;
-          margin-left: -12px;
-          margin-right: -12px;
-
-          @media (prefers-color-scheme: light) {
-            border-color: colors.$light-border;
-          }
-          @media (prefers-color-scheme: dark) {
-            border-color: colors.$dark-border;
-          }
-        }
+        @extend %square-link;
       }
     }
   }
