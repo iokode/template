@@ -1,6 +1,6 @@
 # Spanish
 
-*ARCHIVADO:* Todos los cambios sobre la plantilla se harán directamente en el repositorio [Buttefly](github.com/iokode/butterfly). [Más información](https://github.com/iokode/template/issues/7#issuecomment-1407193245).
+*ARCHIVADO:* Todos los cambios sobre la plantilla se harán directamente en el repositorio [Buttefly](https://github.com/iokode/butterfly). [Más información](https://github.com/iokode/template/issues/7#issuecomment-1407193245).
 
 Este repositorio contiene la plantilla en HTML y CSS (Sass) que se utiliza en el blog de IOKode. La plantilla es de acceso público, sin embargo está totalmente hardcodeada y diseñada para el blog de IOKode, por lo que para ser utilizada en cualquier otro proyecto, requeriría de cambios profundos.
 
@@ -10,7 +10,7 @@ La marca de VADAVO, su nombre y logotipos son propiedad de VADAVO SOLUCIONES SL,
 
 # English
 
-*ARCHIVED:* All changes to the template will be made in the [Buttefly](github.com/iokode/butterfly) repository. [More info](https://github.com/iokode/template/issues/7#issuecomment-1407193245).
+*ARCHIVED:* All changes to the template will be made in the [Buttefly](https://github.com/iokode/butterfly) repository. [More info](https://github.com/iokode/template/issues/7#issuecomment-1407193245).
 
 This repository contains the HTML and CSS (Sass) template used in IOKode blog. The template is public-domain, however it is fully hardcoded and designed for IOKode blog, so to be used in any other project, it requires deep changes.
 
